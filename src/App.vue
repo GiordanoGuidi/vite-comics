@@ -2,7 +2,304 @@
 </script>
 
 <template>
-  <h1>ciao</h1>
+  <div class="main-container">
+    <header>
+      <nav class="small-container">
+        <img src="../src/assets/img/dc-logo.png" alt="">
+        <ul class="links-list">
+          <li>Ciao be</li>
+          <li>Ciao be</li>
+          <li>Ciao be</li>
+          <li>Ciao be</li>
+          <li>Ciao be</li>
+          <li>Ciao be</li>
+          <li>Ciao be</li>
+          <li>Ciao be</li>
+          <li>Ciao be</li>
+          <li>Ciao be</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!--JUMBOTRON-->
+      <div class="jumbotron">
+        <div class="jumbotron-card small-container">
+          <p>--Content goes here--</p>
+        </div>
+      </div>
+      <!--BONUS-->
+      <div class="dc-info">
+        <div class="info-links small-container">
+          <div class="links-card">
+            <img src="../src/assets/img/buy-comics-digital-comics.png" alt="">
+            <p>DIGITAL COMICS</p>
+          </div>
+          <div class="links-card">
+            <img src="../src/assets/img/buy-comics-merchandise.png" alt="">
+            <p>DIGITAL COMICS</p>
+          </div>
+          <div class="links-card">
+            <img src="../src/assets/img/buy-comics-shop-locator.png" alt="">
+            <p>DIGITAL COMICS</p>
+          </div>
+          <div class="links-card">
+            <img src="../src/assets/img/buy-comics-subscriptions.png" alt="">
+            <p>DIGITAL COMICS</p>
+          </div>
+          <div class="links-card">
+            <img src="../src/assets/img/buy-dc-power-visa.svg" alt="">
+            <p>DIGITAL COMICS</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="upper-footer small-container">
+        <div class="upper-footer-col">
+          <div>
+            <h4>DC COMICS</h4>
+            <ul class="mt-20">
+              <li>Comics</li>
+              <li>Comics</li>
+              <li>Comics</li>
+              <li>Comics</li>
+              <li>Comics</li>
+              <li>Comics</li>
+              <li>Comics</li>
+            </ul>
+          </div>
+          <div>
+            <h4>SHOP</h4>
+            <ul class="mt-20">
+              <li>Comics</li>
+              <li>Comics</li>
+              <li>Comics</li>
+              <li>Comics</li>
+              <li>Comics</li>
+              <li>Comics</li>
+              <li>Comics</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="upper-footer-col">
+          <div>
+            <h4>DC</h4>
+            <ul class="mt-20">
+              <li>Comics</li>
+              <li>Comics</li>
+              <li>Comics</li>
+              <li>Comics</li>
+              <li>Comics</li>
+              <li>Comics</li>
+              <li>Comics</li>
+              <li>Comics</li>
+              <li>Comics</li>
+              <li>Comics</li>
+              <li>Comics</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="upper-footer-col">
+          <div>
+            <h4>SITES</h4>
+            <ul class="mt-20">
+              <li>Comics</li>
+              <li>Comics</li>
+              <li>Comics</li>
+              <li>Comics</li>
+              <li>Comics</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom-footer">
+        <div class="small-container">
+          <div class="bottom-footer-info">
+
+            <a href="">SIGN UP NOW!</a>
+            <div class="d-flex align-center">
+              <span>FOLLOW US</span>
+              <ul class="icon-list">
+                <li>
+                  <a href="#">
+                    <img src="../src/assets/img/footer-facebook.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="../src/assets/img/footer-periscope.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="../src/assets/img/footer-pinterest.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="../src/assets/img/footer-twitter.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="../src/assets/img/footer-youtube.png" alt="">
+                  </a>
+                </li>
+
+
+              </ul>
+            </div>
+
+          </div>
+          <div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </footer>
+
+  </div>
 </template>
 
-<style></style>
+<style>
+/*CSS RESET*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/*UTILS*/
+.mt-20 {
+  margin-top: 20px;
+}
+
+/*GENERICS*/
+
+header {
+  height: 150px;
+  background-color: forestgreen;
+}
+
+.main-container {
+  margin: 50px 0px;
+}
+
+.small-container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+ul li {
+  list-style: none;
+}
+
+.d-flex {
+  display: flex;
+
+}
+
+.align-center {
+  align-items: center;
+}
+
+/*HEADER*/
+header nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.links-list {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  height: 100%;
+  align-items: center;
+}
+
+.links-list li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/*MAIN*/
+.jumbotron {
+  height: 150px;
+  background-color: black;
+  color: white;
+}
+
+.jumbotron-card {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dc-info {
+  height: 200px;
+  background-color: lightblue;
+  display: flex;
+}
+
+.info-links {
+  display: flex;
+  padding: 50px 0px;
+  gap: 20px;
+}
+
+.info-links img {
+  width: 50px;
+}
+
+.links-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/*FOOTER*/
+footer {
+  height: 500px;
+  background-image: url(../src/assets/img/footer-bg.jpg);
+}
+
+.upper-footer {
+  display: flex;
+  gap: 50px;
+}
+
+.upper-footer-col {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 30px 0px;
+  gap: 20px;
+}
+
+.bottom-footer {
+  height: 100px;
+  background-color: cadetblue;
+  display: flex;
+  align-items: center;
+}
+
+.bottom-footer-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+</style>
