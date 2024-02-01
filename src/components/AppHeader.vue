@@ -58,8 +58,6 @@ export default {
 }
 </script>
 
-
-
 <template>
     <header>
         <nav class="small-container">
@@ -102,7 +100,7 @@ li a {
     color: gray;
 }
 
-li:hover {
+.links-list li:hover {
     border-bottom: 4px solid #0182F9;
 }
 </style>

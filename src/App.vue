@@ -1,11 +1,14 @@
 <script>
 import AppHeader from './components/AppHeader.vue'
+import AppUpperFooter from './components/AppUpperFooter.vue'
+
 
 export default {
   name: 'vite-comics',
 
   components: {
-    AppHeader,
+    AppHeader, AppUpperFooter
+
 
   }
 
@@ -14,6 +17,7 @@ export default {
 
 <template>
   <div class="main-container">
+    <!--HEADER-->
     <AppHeader />
 
     <main>
@@ -49,67 +53,10 @@ export default {
         </div>
       </div>
     </main>
+    <!--FOOTER-->
     <footer>
-      <div class="upper-footer small-container">
-        <div class="upper-footer-col">
-          <div>
-            <h4>DC COMICS</h4>
-            <ul class="mt-20">
-              <li>Comics</li>
-              <li>Comics</li>
-              <li>Comics</li>
-              <li>Comics</li>
-              <li>Comics</li>
-              <li>Comics</li>
-              <li>Comics</li>
-            </ul>
-          </div>
-          <div>
-            <h4>SHOP</h4>
-            <ul class="mt-20">
-              <li>Comics</li>
-              <li>Comics</li>
-              <li>Comics</li>
-              <li>Comics</li>
-              <li>Comics</li>
-              <li>Comics</li>
-              <li>Comics</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="upper-footer-col">
-          <div>
-            <h4>DC</h4>
-            <ul class="mt-20">
-              <li>Comics</li>
-              <li>Comics</li>
-              <li>Comics</li>
-              <li>Comics</li>
-              <li>Comics</li>
-              <li>Comics</li>
-              <li>Comics</li>
-              <li>Comics</li>
-              <li>Comics</li>
-              <li>Comics</li>
-              <li>Comics</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="upper-footer-col">
-          <div>
-            <h4>SITES</h4>
-            <ul class="mt-20">
-              <li>Comics</li>
-              <li>Comics</li>
-              <li>Comics</li>
-              <li>Comics</li>
-              <li>Comics</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      <!--UPEER FOOTER-->
+      <AppUpperFooter />
 
       <div class="bottom-footer">
         <div class="small-container">
@@ -244,18 +191,6 @@ footer {
   background-image: url(../src/assets/img/footer-bg.jpg);
 }
 
-.upper-footer {
-  display: flex;
-  gap: 50px;
-}
-
-.upper-footer-col {
-  display: flex;
-  flex-direction: column;
-  color: white;
-  padding: 30px 0px;
-  gap: 20px;
-}
 
 .bottom-footer {
   height: 100px;
