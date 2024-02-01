@@ -1,25 +1,21 @@
 <script>
+import AppHeader from './components/AppHeader.vue'
+
+export default {
+  name: 'vite-comics',
+
+  components: {
+    AppHeader,
+
+  }
+
+}
 </script>
 
 <template>
   <div class="main-container">
-    <header>
-      <nav class="small-container">
-        <img src="../src/assets/img/dc-logo.png" alt="">
-        <ul class="links-list">
-          <li>Ciao be</li>
-          <li>Ciao be</li>
-          <li>Ciao be</li>
-          <li>Ciao be</li>
-          <li>Ciao be</li>
-          <li>Ciao be</li>
-          <li>Ciao be</li>
-          <li>Ciao be</li>
-          <li>Ciao be</li>
-          <li>Ciao be</li>
-        </ul>
-      </nav>
-    </header>
+    <AppHeader />
+
     <main>
       <!--JUMBOTRON-->
       <div class="jumbotron">
@@ -180,12 +176,6 @@
 }
 
 /*GENERICS*/
-
-header {
-  height: 150px;
-  background-color: forestgreen;
-}
-
 .main-container {
   margin: 50px 0px;
 }
@@ -208,26 +198,8 @@ ul li {
   align-items: center;
 }
 
-/*HEADER*/
-header nav {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.links-list {
-  display: flex;
-  list-style: none;
-  gap: 20px;
-  height: 100%;
-  align-items: center;
-}
-
-.links-list li {
-  height: 100%;
-  display: flex;
-  align-items: center;
+li a {
+  text-decoration: none;
 }
 
 /*MAIN*/
