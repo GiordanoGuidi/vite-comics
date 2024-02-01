@@ -1,13 +1,15 @@
 <script>
 import AppHeader from './components/AppHeader.vue'
 import AppUpperFooter from './components/AppUpperFooter.vue'
+import AppBottomFooter from './components/AppBottomFooter.vue'
+
 
 
 export default {
   name: 'vite-comics',
 
   components: {
-    AppHeader, AppUpperFooter
+    AppHeader, AppUpperFooter, AppBottomFooter,
 
 
   }
@@ -57,55 +59,10 @@ export default {
     <footer>
       <!--UPEER FOOTER-->
       <AppUpperFooter />
+      <AppBottomFooter />
 
-      <div class="bottom-footer">
-        <div class="small-container">
-          <div class="bottom-footer-info">
-
-            <a href="">SIGN UP NOW!</a>
-            <div class="d-flex align-center">
-              <span>FOLLOW US</span>
-              <ul class="icon-list">
-                <li>
-                  <a href="#">
-                    <img src="../src/assets/img/footer-facebook.png" alt="">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="../src/assets/img/footer-periscope.png" alt="">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="../src/assets/img/footer-pinterest.png" alt="">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="../src/assets/img/footer-twitter.png" alt="">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="../src/assets/img/footer-youtube.png" alt="">
-                  </a>
-                </li>
-
-
-              </ul>
-            </div>
-
-          </div>
-          <div>
-
-          </div>
-        </div>
-
-      </div>
 
     </footer>
-
   </div>
 </template>
 
@@ -123,6 +80,10 @@ export default {
 }
 
 /*GENERICS*/
+body {
+  background-color: black;
+}
+
 .main-container {
   margin: 50px 0px;
 }
@@ -146,6 +107,10 @@ ul li {
 }
 
 li a {
+  text-decoration: none;
+}
+
+a {
   text-decoration: none;
 }
 
@@ -189,24 +154,5 @@ li a {
 footer {
   height: 500px;
   background-image: url(../src/assets/img/footer-bg.jpg);
-}
-
-
-.bottom-footer {
-  height: 100px;
-  background-color: cadetblue;
-  display: flex;
-  align-items: center;
-}
-
-.bottom-footer-info {
-  display: flex;
-  justify-content: space-between;
-}
-
-.icon-list {
-  display: flex;
-  align-items: center;
-  list-style: none;
 }
 </style>
