@@ -7,6 +7,7 @@ export default {
 
 
 <template>
+    <!--BOTTOM-FOOTER-->
     <div class="bottom-footer">
         <div class="small-container">
             <div class="bottom-footer-info">
@@ -48,8 +49,6 @@ export default {
     </div>
 </template>
 
-
-
 <style lang="scss" scoped>
 .bottom-footer {
     height: 100px;
@@ -60,10 +59,8 @@ export default {
     a {
         color: #0A80F9;
         font-weight: bold;
-
     }
 }
-
 
 .bottom-footer-info {
     display: flex;
@@ -78,8 +75,6 @@ export default {
     gap: 10px;
 }
 
-
-
 .sign-button {
     border: 2px solid #0A80F9;
     color: white;
@@ -89,5 +84,4 @@ export default {
 
 .c-blue {
     color: #0A80F9;
-}
-</style>
+}</style>

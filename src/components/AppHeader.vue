@@ -59,9 +59,11 @@ export default {
 </script>
 
 <template>
+    <!--HEADER-->
     <header>
         <nav class="small-container">
             <img src="../assets/img/dc-logo.png" alt="">
+            <!--LINKS-LIST-->
             <ul class="links-list">
                 <li v-for="(link, i) in links" :key="i"><a :href=link.url>{{ link.text }}</a></li>
             </ul>
@@ -69,18 +71,19 @@ export default {
     </header>
 </template>
 
-<style>
+<style lang="scss" scoped>
 header {
     height: 150px;
     background-color: white;
+
+    nav {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
 
-header nav {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 
 .links-list {
     display: flex;
@@ -88,16 +91,16 @@ header nav {
     gap: 20px;
     height: 100%;
     align-items: center;
-}
 
-.links-list li {
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
+    li {
+        height: 100%;
+        display: flex;
+        align-items: center;
 
-li a {
-    color: gray;
+        a {
+            color: gray;
+        }
+    }
 }
 
 .links-list li:hover {
