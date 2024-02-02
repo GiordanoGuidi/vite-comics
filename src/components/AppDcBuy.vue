@@ -1,6 +1,6 @@
 <script>
 export default {
-    name: 'AppDCInfo',
+    name: 'AppDcBuy',
     methods: {
         createImagePath(image_name) {
             const url = new URL(`../assets/img/${image_name}`, import.meta.url)

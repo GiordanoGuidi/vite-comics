@@ -2,7 +2,7 @@
 import AppHeader from './components/AppHeader.vue'
 import AppUpperFooter from './components/AppUpperFooter.vue'
 import AppBottomFooter from './components/AppBottomFooter.vue'
-import AppDcInfo from './components/AppDCInfo.vue'
+import AppDcBuy from './components/AppDcBuy.vue'
 import AppMain from './components/AppMain.vue'
 
 
@@ -132,7 +132,7 @@ export default {
   }),
 
   components: {
-    AppHeader, AppUpperFooter, AppBottomFooter, AppDcInfo, AppMain
+    AppHeader, AppUpperFooter, AppBottomFooter, AppDcBuy, AppMain
 
 
   }
@@ -152,13 +152,13 @@ export default {
           <p>--Content goes here--</p>
         </div>
       </div>
-
+      <AppMain :comicBook="comicBooks" />
     </main>
 
     <!--FOOTER-->
     <footer>
       <!--BONUS-->
-      <AppDcInfo :buyLinks="footerBuyLinks" />
+      <AppDcBuy :buyLinks="footerBuyLinks" />
       <!--UPEER FOOTER-->
       <AppUpperFooter />
       <AppBottomFooter />
