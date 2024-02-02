@@ -1,6 +1,12 @@
 <script>
 export default {
-    name: 'AppDcInfo'
+    name: 'AppDcInfo',
+    methods: {
+        createImagePath(image_name) {
+            const url = new URL(``)
+        }
+
+    }
 }
 </script>
 

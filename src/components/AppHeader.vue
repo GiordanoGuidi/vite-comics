@@ -84,7 +84,6 @@ header {
     }
 }
 
-
 .links-list {
     display: flex;
     list-style: none;

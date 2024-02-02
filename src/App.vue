@@ -2,7 +2,7 @@
 import AppHeader from './components/AppHeader.vue'
 import AppUpperFooter from './components/AppUpperFooter.vue'
 import AppBottomFooter from './components/AppBottomFooter.vue'
-import AppDcInfo from './components/AppDcInfo.vue'
+import AppDcInfo from './components/AppDCInfo.vue'
 
 
 

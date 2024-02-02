@@ -67,11 +67,6 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-footer {
-    height: 500px;
-    background-image: url(../assets/img/footer-bg.jpg);
-}
-
 .upper-footer {
     display: flex;
     height: calc(100% - 100px);
@@ -85,6 +80,10 @@ footer {
 
         a {
             color: #5F6A6C;
+        }
+
+        a:hover {
+            filter: brightness(100);
         }
     }
 }

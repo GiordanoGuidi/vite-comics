@@ -57,7 +57,6 @@ export default {
     align-items: center;
 
     a {
-        color: #0A80F9;
         font-weight: bold;
     }
 }
@@ -84,4 +83,5 @@ export default {
 
 .c-blue {
     color: #0A80F9;
-}</style>
+}
+</style>
