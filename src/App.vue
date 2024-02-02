@@ -133,8 +133,6 @@ export default {
 
   components: {
     AppHeader, AppUpperFooter, AppBottomFooter, AppDcBuy, AppMain
-
-
   }
 
 }
@@ -153,6 +151,7 @@ export default {
         </div>
       </div>
       <AppMain :comicBook="comicBooks" />
+
     </main>
 
     <!--FOOTER-->

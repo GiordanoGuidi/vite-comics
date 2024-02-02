@@ -36,7 +36,7 @@ export default {
 <style>
 .jumbotron {
     height: 150px;
-    background-color: black;
+    background-color: greenyellow;
     color: white;
 }
 
