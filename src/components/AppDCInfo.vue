@@ -17,23 +17,23 @@ export default {
         <div class="info-links small-container">
             <div class="links-card">
                 <img src="../assets/img/buy-comics-digital-comics.png" alt="">
-                <p>DIGITAL COMICS</p>
+                <a href="">DIGITAL COMICS</a>
             </div>
             <div class="links-card">
                 <img src="../assets/img/buy-comics-merchandise.png" alt="">
-                <p>DIGITAL COMICS</p>
+                <a href="">DIGITAL COMICS</a>
             </div>
             <div class="links-card">
                 <img src="../assets/img/buy-comics-shop-locator.png" alt="">
-                <p>DIGITAL COMICS</p>
+                <a href="">DIGITAL COMICS</a>
             </div>
             <div class="links-card">
                 <img src="../assets/img/buy-comics-subscriptions.png" alt="">
-                <p>DIGITAL COMICS</p>
+                <a href="">DIGITAL COMICS</a>
             </div>
             <div class="links-card">
                 <img src="../assets/img/buy-dc-power-visa.svg" alt="">
-                <p>DIGITAL COMICS</p>
+                <a href="">DIGITAL COMICS</a>
             </div>
         </div>
     </div>
@@ -56,7 +56,7 @@ export default {
 }
 
 .dc-info {
-    height: 200px;
+    height: 100px;
     background-color: #0182F9;
     display: flex;
 }

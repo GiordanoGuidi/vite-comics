@@ -32,12 +32,12 @@ export default {
           <p>--Content goes here--</p>
         </div>
       </div>
-      <!--BONUS-->
-      <AppDcInfo />
     </main>
 
     <!--FOOTER-->
     <footer>
+      <!--BONUS-->
+      <AppDcInfo />
       <!--UPEER FOOTER-->
       <AppUpperFooter />
       <AppBottomFooter />

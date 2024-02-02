@@ -69,7 +69,7 @@ export default {
 <style lang="scss" scoped>
 .upper-footer {
     display: flex;
-    height: calc(100% - 100px);
+    height: calc(100% - 200px);
     gap: 50px;
 
     .col {
