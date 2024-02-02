@@ -1,11 +1,17 @@
 <script>
 export default {
-    name: 'AppDcInfo',
+    name: 'AppDCInfo',
     methods: {
         createImagePath(image_name) {
-            const url = new URL(``)
-        }
+            const url = new URL(`../assets/img/${image_name}`, import.meta.url)
+            console.log(url)
+            return url.href
+        },
 
+
+    },
+    props: {
+        buyLinks: Array,
     }
 }
 </script>
@@ -13,28 +19,14 @@ export default {
 
 
 <template>
+    <!--DC-FOOTER-->
     <div class="dc-info">
         <div class="info-links small-container">
-            <div class="links-card">
-                <img src="../assets/img/buy-comics-digital-comics.png" alt="">
-                <a href="">DIGITAL COMICS</a>
+            <div v-for="link in buyLinks" class="links-card">
+                <img :src="createImagePath(link.src)" alt="">
+                <a href="#">{{ link.text.toUpperCase() }}</a>
             </div>
-            <div class="links-card">
-                <img src="../assets/img/buy-comics-merchandise.png" alt="">
-                <a href="">DIGITAL COMICS</a>
-            </div>
-            <div class="links-card">
-                <img src="../assets/img/buy-comics-shop-locator.png" alt="">
-                <a href="">DIGITAL COMICS</a>
-            </div>
-            <div class="links-card">
-                <img src="../assets/img/buy-comics-subscriptions.png" alt="">
-                <a href="">DIGITAL COMICS</a>
-            </div>
-            <div class="links-card">
-                <img src="../assets/img/buy-dc-power-visa.svg" alt="">
-                <a href="">DIGITAL COMICS</a>
-            </div>
+
         </div>
     </div>
 </template>
@@ -65,17 +57,22 @@ export default {
     display: flex;
     padding: 50px 0px;
     gap: 50px;
+
 }
 
-.info-links img {
-    width: 50px;
-    height: auto;
-}
 
 .links-card {
     display: flex;
     align-items: center;
     gap: 10px;
-    color: white;
+
+    a {
+        color: white;
+    }
+
+    img {
+        width: 50px;
+        height: auto;
+    }
 }
 </style>
