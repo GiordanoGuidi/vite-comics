@@ -4,6 +4,7 @@ import AppUpperFooter from './components/AppUpperFooter.vue'
 import AppBottomFooter from './components/AppBottomFooter.vue'
 import AppDcBuy from './components/AppDcBuy.vue'
 import AppMain from './components/AppMain.vue'
+import AppJumbotron from './components/AppJumbotron.vue'
 
 
 
@@ -132,7 +133,7 @@ export default {
   }),
 
   components: {
-    AppHeader, AppUpperFooter, AppBottomFooter, AppDcBuy, AppMain
+    AppHeader, AppUpperFooter, AppBottomFooter, AppDcBuy, AppMain, AppJumbotron,
   }
 
 }
@@ -145,11 +146,8 @@ export default {
 
     <main>
       <!--JUMBOTRON-->
-      <div class="jumbotron">
-        <div class="jumbotron-card small-container">
-          <p>--Content goes here--</p>
-        </div>
-      </div>
+      <AppJumbotron />
+
       <AppMain :comicBook="comicBooks" />
 
     </main>
