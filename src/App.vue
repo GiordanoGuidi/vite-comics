@@ -147,17 +147,16 @@ export default {
     <main>
       <!--JUMBOTRON-->
       <AppJumbotron />
-
+      <!--CARDS-CONTAINER-->
       <AppMain :comicBook="comicBooks" />
-
     </main>
 
-    <!--FOOTER-->
     <footer>
-      <!--BONUS-->
+      <!--DC BUY-->
       <AppDcBuy :buyLinks="footerBuyLinks" />
       <!--UPEER FOOTER-->
       <AppUpperFooter />
+      <!--BOTTOM FOOTER-->
       <AppBottomFooter />
     </footer>
   </div>

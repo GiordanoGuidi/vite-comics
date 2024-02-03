@@ -9,6 +9,8 @@ export default {
 <template>
     <!--UPPER FOOTER-->
     <div class="upper-footer small-container">
+        <div class="bg-footer">
+        </div>
         <!--COL-->
         <div class="col">
             <div>
@@ -63,6 +65,7 @@ export default {
                 </ul>
             </div>
         </div>
+
     </div>
 </template>
 
@@ -71,6 +74,7 @@ export default {
     display: flex;
     height: calc(100% - 200px);
     gap: 50px;
+    position: relative;
 
     .col {
         display: flex;
@@ -86,7 +90,21 @@ export default {
             filter: brightness(100);
         }
     }
+
 }
+
+.bg-footer {
+    width: 100%;
+    background-image: url(../assets/img/dc-logo-bg.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -50px;
+    bottom: 0;
+    right: -500px;
+
+}
+
+
 
 h4 {
     color: white;
