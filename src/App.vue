@@ -131,11 +131,9 @@ export default {
     ]
 
   }),
-
   components: {
     AppHeader, AppUpperFooter, AppBottomFooter, AppDcBuy, AppMain, AppJumbotron,
   }
-
 }
 </script>
 
