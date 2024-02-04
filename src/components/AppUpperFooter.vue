@@ -1,6 +1,9 @@
 <script>
 export default {
-    name: 'AppUpperFooter'
+    name: 'AppUpperFooter',
+    props: {
+        links: Array
+    }
 }
 </script>
 
@@ -10,78 +13,36 @@ export default {
     <!--UPPER FOOTER-->
     <div class="upper-footer small-container">
         <!--COL-->
-        <div class="col">
-            <div>
-                <h4>DC COMICS</h4>
-                <ul class="mt-20">
-                    <li><a href="#">Characters</a></li>
-                    <li><a href="#">Comics</a></li>
-                    <li><a href="#">Movies</a></li>
-                    <li><a href="#">TV</a></li>
-                    <li><a href="#">Games</a></li>
-                    <li><a href="#">Videos</a></li>
-                    <li><a href="#">News</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4>SHOP</h4>
-                <ul class="mt-20">
-                    <li><a href="#">Shop DC</a></li>
-                    <li><a href="#">Shop DC</a></li>
-                    <li><a href="#">Shop DC Collectibles</a></li>
-                </ul>
-            </div>
-        </div>
-        <!--COL-->
-        <div class="col">
-            <div>
-                <h4>DC</h4>
-                <ul class="mt-20">
-                    <li><a href="#">Terms Of Use</a></li>
-                    <li><a href="#">Privacy policy(New)</a></li>
-                    <li><a href="#">Advertising</a></li>
-                    <li><a href="#">Jobs</a></li>
-                    <li><a href="#">Subscriptions</a></li>
-                    <li><a href="#">Talent Workshops</a></li>
-                    <li><a href="#">CPSC Certificates</a></li>
-                    <li><a href="#">Ratings</a></li>
-                    <li><a href="#">Shop Help</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </div>
-        </div>
-        <!--COL-->
-        <div class="col">
-            <div>
-                <h4>SITES</h4>
-                <ul class="mt-20">
-                    <li><a href="#">DC</a></li>
-                    <li><a href="#">MAD Magazine</a></li>
-                    <li><a href="#">DC Kids</a></li>
-                    <li><a href="#">DC Universe</a></li>
-                    <li><a href="#">DC Power Visa</a></li>
-                </ul>
-            </div>
+        <div class="col" v-for="(link, i) in links" :key="i">
+            <h4>{{ link.title.toUpperCase() }}</h4>
+            <ul>
+                <li><a href="#">Characters</a></li>
+                <li><a href="#">Comics</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">TV</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">Videos</a></li>
+                <li><a href="#">News</a></li>
+            </ul>
         </div>
         <div class="bg-footer">
             <img src="../assets/img/dc-logo-bg.png" alt="">
         </div>
-
     </div>
 </template>
 
 <style lang="scss" scoped>
 .upper-footer {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     height: calc(100% - 200px);
-    gap: 50px;
     position: relative;
 
     .col {
-        display: flex;
         flex-direction: column;
         padding: 30px 0px;
-        gap: 20px;
+        margin-right: 30px;
 
         a {
             color: #5F6A6C;
@@ -97,13 +58,17 @@ export default {
 .bg-footer {
     width: 100%;
     overflow: hidden;
-    position: relative;
+    // position: relative;
 
     img {
         position: absolute;
         right: 0;
         top: -80px;
     }
+}
+
+.p-0 {
+    padding: 0px;
 }
 
 
