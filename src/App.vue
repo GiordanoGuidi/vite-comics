@@ -206,7 +206,7 @@ export default {
       <!--DC BUY-->
       <AppDcBuy :buyLinks="footerBuyLinks" />
       <!--UPEER FOOTER-->
-      <AppUpperFooter :links="upperFooterLinks" />
+      <AppUpperFooter :linksLists="upperFooterLinks" />
       <!--BOTTOM FOOTER-->
       <AppBottomFooter />
     </footer>
