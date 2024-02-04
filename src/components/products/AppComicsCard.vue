@@ -3,7 +3,7 @@ export default {
     name: 'AppComicsCard',
     props: {
         comicBook: Array
-    }
+    },
 
 }
 
@@ -16,7 +16,7 @@ export default {
         <a :href="book.series">
             <img :src=book.thumb :alt="book.series">
         </a>
-        <h3>{{ book.series }}</h3>
+        <h3>{{ book.series.toUpperCase() }}</h3>
     </li>
 </template>
 
@@ -24,6 +24,7 @@ export default {
 h3 {
     color: white;
     font-size: 0.8rem;
+    font-weight: 400;
 }
 
 .comic-book-card {

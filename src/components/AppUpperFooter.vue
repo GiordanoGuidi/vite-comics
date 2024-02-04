@@ -85,11 +85,12 @@ export default {
 
         a {
             color: #5F6A6C;
+
+            &:hover {
+                filter: brightness(100);
+            }
         }
 
-        a:hover {
-            filter: brightness(100);
-        }
     }
 }
 
