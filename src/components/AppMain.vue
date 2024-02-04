@@ -17,23 +17,21 @@ export default {
     <!--CARDS-CONTAINER-->
     <div class="small-container card-container">
         <button class="series">CURRENT SERIES</button>
-        <AppComicsCard :comicBook="comicBook" />
         <button class="load">LOAD MORE</button>
+        <ul class="cards-list">
+            <AppComicsCard :comicBook="comicBook" />
+        </ul>
     </div>
 </template>
 
 <style>
 .card-container {
     display: flex;
-    flex-wrap: wrap;
     padding-top: 30px;
     position: relative;
+    padding-bottom: 70px;
 }
 
-.comic-book-card {
-    flex-basis: calc(100% / 6);
-    padding: 10px;
-}
 
 button {
     color: white;
@@ -54,5 +52,16 @@ button.load {
     bottom: 0;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.cards-list {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+
+    .comic-book-card {
+        flex-basis: calc(100% / 6);
+    }
 }
 </style>

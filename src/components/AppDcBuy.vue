@@ -8,7 +8,6 @@ export default {
             return url.href
         },
 
-
     },
     props: {
         buyLinks: Array,
@@ -23,7 +22,7 @@ export default {
     <div class="dc-info">
         <div class="info-links small-container">
             <div v-for="link in buyLinks" class="links-card">
-                <img :src="createImagePath(link.src)" alt="">
+                <img :src="createImagePath(link.src)" :alt="link.text">
                 <a href="#">{{ link.text.toUpperCase() }}</a>
             </div>
 
@@ -34,31 +33,19 @@ export default {
 
 
 <style>
-.jumbotron {
-    height: 150px;
-    background-color: greenyellow;
-    color: white;
-}
-
-.jumbotron-card {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
 .dc-info {
     height: 100px;
     background-color: #0182F9;
     display: flex;
+    position: sticky;
+
+    .info-links {
+        display: flex;
+        padding: 50px 0px;
+        gap: 50px;
+    }
 }
 
-.info-links {
-    display: flex;
-    padding: 50px 0px;
-    gap: 50px;
-
-}
 
 
 .links-card {

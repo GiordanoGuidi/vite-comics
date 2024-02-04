@@ -12,10 +12,12 @@ export default {
 
 <template>
     <!--SINGLE-CARD-->
-    <div class="comic-book-card" v-for="book in comicBook">
-        <img :src=book.thumb alt="">
+    <li class="comic-book-card" v-for="book in comicBook">
+        <a :href="book.series">
+            <img :src=book.thumb :alt="book.series">
+        </a>
         <h3>{{ book.series }}</h3>
-    </div>
+    </li>
 </template>
 
 <style>
@@ -24,8 +26,12 @@ h3 {
     font-size: 0.8rem;
 }
 
-img {
-    max-width: 100%;
-    height: 70%;
+.comic-book-card {
+    padding: 10px;
+
+    img {
+        height: 70%;
+        width: 100%;
+    }
 }
 </style>
